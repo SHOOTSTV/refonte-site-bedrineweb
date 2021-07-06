@@ -11,7 +11,7 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.904);
-    background-image: url('../img/fond-ecran.jpg');
+    background-image: url('../img/fond-ecran2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,7 +23,6 @@ body{
     height: 80px;
     padding: 0px;
     display: block;
-    background-color: #262285;
     position: fixed;
     transition: 0.3s;
 }
@@ -46,7 +45,7 @@ body{
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 200;
 }
 
@@ -98,14 +97,82 @@ body{
 
 .accueil-content{
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 350px;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
+.text-1{
+    width: 520px;
+    margin-left: 30%;
+    background-color: black;
+    box-shadow: 1px 1px 12px #555;
+    border-radius: 0.4rem;
+    
+}
+
+.text-2{
+    width: 1020px;
+    margin-left: 8%;
+    background-color: black;
+    box-shadow: 1px 1px 12px #555;
+    font-size: x-large;
+    border-radius: 0.4rem;
+}
+
+.btn {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.btn-1{
+    width: 15rem;
+    height: auto;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 0.4rem;
+    background-color: white;
+    text-decoration: none;
+    color:black;
+    font-size: 0.7em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.btn-2{
+    width: 15rem;
+    height: auto;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 0.4rem;
+    background-color: white;
+    text-decoration: none;
+    color:black;
+    font-size: 0.7em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+
+.btn-1:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-2:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
 .services{
     height: 300px;
-    background-color: rgb(151, 85, 23);
+    background-color: rgb(37, 35, 33);
 
 }
 
