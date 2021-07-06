@@ -13,7 +13,6 @@ body{
     background-color: rgba(0, 0, 0, 0.904);
     background-image: url('../img/fond-ecran.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -25,6 +24,8 @@ body{
     padding: 0px;
     display: block;
     background-color: #262285;
+    position: fixed;
+    transition: 0.3s;
 }
 
 .inner_header{
@@ -66,7 +67,7 @@ body{
     font-weight: bold;
 }
 
-.navigation a{   
+.navigation li{   
     height: 100%;
     display: table;
     float: left;
@@ -77,12 +78,35 @@ body{
     padding-right: 0;
 }
 
-.navigation a li{
+.navigation li a{
     display: table-cell;
     vertical-align: middle;
     height: 100%;
     color: white;
     font-size: 16px;
+}
+
+.nav-anim:hover{
+    color: rgb(218, 214, 214);
+}
+
+/* =============SECTIONS============= */
+
+.accueil{
+    height: 940px;
+}
+
+.accueil-content{
+    margin: auto;
+    width: 50%;
+    padding: 350px;
+    font-size: x-large;
+}
+
+.services{
+    height: 300px;
+    background-color: rgb(151, 85, 23);
+
 }
 
 /* =============FOOTER============= */
@@ -93,7 +117,6 @@ footer{
     padding: 40px 0px;
     color: aliceblue;
     position:absolute;
-    bottom:0;
 }
 
 .footer-copyright{
