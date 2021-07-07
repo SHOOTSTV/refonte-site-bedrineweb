@@ -14,6 +14,7 @@ body{
     background-image: url('../img/fond-ecran2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 /* =============HEADER============= */
@@ -89,7 +90,7 @@ body{
     color: rgb(218, 214, 214);
 }
 
-/* =============SECTIONS============= */
+/* =============ACCEUIL============= */
 
 .accueil{
     height: 940px;
@@ -104,11 +105,10 @@ body{
 
 .text-1{
     width: 520px;
-    margin-left: 30%;
+    margin-left: 27.5%;
     background-color: black;
     box-shadow: 1px 1px 12px #555;
     border-radius: 0.4rem;
-    
 }
 
 .text-2{
@@ -170,10 +170,33 @@ body{
 .btn-2:hover {
     background-color: rgba(255, 255, 255, 0.75);
 }
+
+/* =============SERVICES============= */
+
 .services{
-    height: 300px;
+    height: 200px;
     background-color: rgb(37, 35, 33);
 
+}
+
+.text-3{
+    text-align: center;   
+    font-size: 2.3rem;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.services-items{
+    background-color: black; 
+    border-radius: 0.4rem;
+    text-align: center; 
+    width: 240px;
+    height: 110px;
+    box-shadow: 1px 1px 12px #555;
 }
 
 /* =============FOOTER============= */
