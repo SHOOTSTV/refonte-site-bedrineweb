@@ -10,11 +10,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.904);
-    background-image: url('../img/fond-ecran2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-color: rgba(0, 0, 0, 0.904);   
 }
 
 /* =============HEADER============= */
@@ -84,6 +80,7 @@ body{
     height: 100%;
     color: white;
     font-size: 16px;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-anim:hover{
@@ -94,6 +91,9 @@ body{
 
 .accueil{
     height: 940px;
+    background-image: url('../img/fond-ecran2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .accueil-content{
@@ -174,20 +174,25 @@ body{
 /* =============SERVICES============= */
 
 .services{
-    height: 200px;
+    height: 700px;
     background-color: rgb(37, 35, 33);
-
 }
 
 .text-3{
     text-align: center;   
     font-size: 2.3rem;
+    padding: 0.7rem;
 }
 
 .services-container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 0.7rem;
+    height: 540px;
+    width: 1100px;
+    margin-left: 390px;
 }
 
 .services-items{
@@ -197,6 +202,25 @@ body{
     width: 240px;
     height: 110px;
     box-shadow: 1px 1px 12px #555;
+    border: 3px solid #262285;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.services-items:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+/* =============PRESENTATION============= */
+
+.presentation{
+    text-align: center;   
+    font-size: 1.3rem;
+    padding: 0.7rem;;
+}
+
+.pres-txt{
+    padding: 0.7rem;
 }
 
 /* =============FOOTER============= */
@@ -206,7 +230,8 @@ footer{
     background-color: #262285;
     padding: 40px 0px;
     color: aliceblue;
-    position:absolute;
+    position: absolute;
+    margin-top: 30%;
 }
 
 .footer-copyright{
