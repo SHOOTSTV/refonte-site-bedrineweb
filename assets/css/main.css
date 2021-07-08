@@ -10,10 +10,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.904);
-    background-image: url('../img/fond-ecran.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.904);   
 }
 
 /* =============HEADER============= */
@@ -23,7 +20,6 @@ body{
     height: 80px;
     padding: 0px;
     display: block;
-    background-color: #262285;
     position: fixed;
     transition: 0.3s;
 }
@@ -46,7 +42,7 @@ body{
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 200;
 }
 
@@ -84,30 +80,173 @@ body{
     height: 100%;
     color: white;
     font-size: 16px;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-anim:hover{
     color: rgb(218, 214, 214);
 }
 
-/* =============SECTIONS============= */
+/* =============ACCEUIL============= */
 
 .accueil{
     height: 940px;
+    background-image: url('../img/fond-ecran2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .accueil-content{
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 350px;
-    font-size: x-large;
+    font-size: xx-large;
 }
+
+.text-1{
+    width: 520px;
+    margin-left: 26.3%;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+}
+
+.text-2{
+    width: 1020px;
+    margin-left: 8%;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: x-large;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+}
+
+.btn {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.btn-1{
+    width: 15rem;
+    height: auto;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 0.4rem;
+    background-color: white;
+    text-decoration: none;
+    color:black;
+    font-size: 0.7em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.btn-2{
+    width: 15rem;
+    height: auto;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 0.4rem;
+    background-color: white;
+    text-decoration: none;
+    color:black;
+    font-size: 0.7em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+
+.btn-1:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-2:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* =============SERVICES============= */
 
 .services{
-    height: 300px;
-    background-color: rgb(151, 85, 23);
-
+    height: 600px;
+    background-color: rgb(37, 35, 33);
+    padding: 0.7rem;;
 }
+
+.services-titre{
+    text-align: center;   
+    font-size: 2rem;
+    padding: 0.7rem;
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    margin-left: 52.5rem;
+    border-radius: 0.4rem;
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.7rem;
+    height: 540px;
+    width: 1100px;
+    margin-left: 390px;
+}
+
+.services-items{
+    background-color: black; 
+    border-radius: 0.4rem;
+    text-align: center; 
+    width: 240px;
+    height: 110px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 3px solid #262285;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.services-items:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+/* =============PRESENTATION============= */
+
+.presentation{
+    text-align: center;   
+    font-size: 1.3rem;
+    padding: 0.7rem;;
+}
+
+.pres-titre{
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    margin-left: 43.3%;
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+}
+
+.pres-txt{
+    padding: 0.7rem;
+    width: 1000px;
+    margin-left: 23%;
+    background-color: rgb(37, 35, 33);
+    border-radius: 0.4rem;
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* =============EQUIPE============= */
+
+
 
 /* =============FOOTER============= */
 
@@ -116,7 +255,8 @@ footer{
     background-color: #262285;
     padding: 40px 0px;
     color: aliceblue;
-    position:absolute;
+    position: absolute;
+    margin-top: 30%;
 }
 
 .footer-copyright{
