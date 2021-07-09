@@ -91,7 +91,7 @@ body{
 
 .accueil{
     height: 940px;
-    background-image: url('../img/fond-ecran2.jpg');
+    background-image: url('../img/fond-ecran4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -114,12 +114,13 @@ body{
 
 .text-2{
     width: 1020px;
-    margin-left: 8%;
+    margin-left: 5%;
     background-color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-size: x-large;
     border-radius: 0.4rem;
     padding: 0.5rem;
+    margin: 1rem;
 }
 
 .btn {
@@ -176,8 +177,7 @@ body{
 /* =============SERVICES============= */
 
 .services{
-    height: 600px;
-    background-color: rgb(37, 35, 33);
+    height: 600px;   
     padding: 0.7rem;;
 }
 
@@ -185,7 +185,6 @@ body{
     text-align: center;   
     font-size: 2rem;
     padding: 0.7rem;
-    background-color: rgb(0, 0, 0);
     width: 200px;
     margin-left: 52.5rem;
     border-radius: 0.4rem;
@@ -215,7 +214,9 @@ body{
 }
 
 .services-items:hover {
-    background-color: rgb(20, 20, 20);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* =============PRESENTATION============= */
@@ -227,7 +228,6 @@ body{
 }
 
 .pres-titre{
-    background-color: rgb(0, 0, 0);
     width: 250px;
     margin-left: 43.3%;
     border-radius: 0.4rem;
@@ -242,28 +242,172 @@ body{
     border-radius: 0.4rem;
     border: 3px solid black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease-in-out;
 }
 
 /* =============EQUIPE============= */
 
+.team-titre{
+    width: 250px;
+    margin-left: 43.3%;
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 32px;
+}
 
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.7rem;
+    height: 200px;
+    width: 1100px;
+    margin-left: 390px;
+}
 
+.team-items{
+    background-color: black; 
+    border-radius: 0.4rem;
+    text-align: center; 
+    width: 240px;
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 3px solid #262285;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+.team-img{
+    border-radius: 3rem;
+}
+
+.team-rs{
+    padding: 0.3rem;
+}
+/* =============CONTACT============= */
+
+.contact-titre{
+    width: 250px;
+    margin-left: 43.3%;
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 32px;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.7rem;
+    height: 200px;
+    width: 1100px;
+    margin-left: 390px;
+}
+
+.contact-items{
+    text-align: center; 
+    width: 280px;
+    height: 100px;
+    background-color: rgb(37, 35, 33);
+    border-radius: 1.5rem;
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+.txt-contact{
+    margin: 0.5rem;
+}
+
+.second-txtcontact{
+    font-size: 1rem;
+    padding: 0.2rem;
+}
 /* =============FOOTER============= */
 
 footer{
     width: 100%;
-    background-color: #262285;
-    padding: 40px 0px;
+    height: 170px;
+    background-color: black;
+    padding: 30px 0px;
     color: aliceblue;
     position: absolute;
-    margin-top: 30%;
 }
 
-.footer-copyright{
- 
-    
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.footer-cge{
-
+.footer-content h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
 }
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials i{
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.socials a:hover i{
+    color: rgb(218, 214, 214);
+}
+
+.footer-bottom{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* =============SCROLLBAR============= */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(59, 59, 59);;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
