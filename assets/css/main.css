@@ -22,6 +22,7 @@ body{
     display: block;
     position: fixed;
     transition: 0.3s;
+    z-index: 2;
 }
 
 .inner_header{
@@ -87,10 +88,15 @@ body{
     color: rgb(218, 214, 214);
 }
 
+@media screen and (max-width: 545px){
+    .header{
+    display: none;
+    }
+}
 /* =============ACCEUIL============= */
 
 .accueil{
-    height: 940px;
+    height: 100vh;
     background-image: url('../img/fond-ecran4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,14 +104,18 @@ body{
 
 .accueil-content{
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 60%;
-    padding: 350px;
+    height: 100vh;
     font-size: xx-large;
 }
 
 .text-1{
-    width: 520px;
-    margin-left: 26.3%;
+    width:fit-content;
+    text-align: center;
     background-color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0.4rem;
@@ -113,7 +123,7 @@ body{
 }
 
 .text-2{
-    width: 1020px;
+    width:fit-content;
     margin-left: 5%;
     background-color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -133,7 +143,6 @@ body{
 
 .btn-1{
     width: 15rem;
-    height: auto;
     padding: 1rem 1rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -150,7 +159,6 @@ body{
 
 .btn-2{
     width: 15rem;
-    height: auto;
     padding: 1rem 1rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -177,16 +185,15 @@ body{
 /* =============SERVICES============= */
 
 .services{
-    height: 600px;   
-    padding: 0.7rem;;
+    height: auto;   
+    padding: 0.7rem 0;
 }
 
 .services-titre{
     text-align: center;   
     font-size: 2rem;
-    padding: 0.7rem;
-    width: 200px;
-    margin-left: 52.5rem;
+    padding: 0.7rem 0;
+    width: 100%;
     border-radius: 0.4rem;
 }
 
@@ -196,9 +203,8 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0.7rem;
-    height: 540px;
-    width: 1100px;
-    margin-left: 390px;
+    width: 50vw;
+    margin-left: 24.5%;
 }
 
 .services-items{
@@ -211,33 +217,36 @@ body{
     border: 3px solid #262285;
     padding: 1rem;
     transition: all 0.2s ease-in-out;
+    margin-bottom: 1rem;
 }
 
 .services-items:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 /* =============PRESENTATION============= */
 
 .presentation{
-    text-align: center;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    align-items: center; 
     font-size: 1.3rem;
-    padding: 0.7rem;;
+    padding: 0.7rem 0;
 }
 
 .pres-titre{
-    width: 250px;
-    margin-left: 43.3%;
+    width: 100%;
+    text-align: center;
     border-radius: 0.4rem;
-    padding: 0.7rem;
+    padding: 0.7rem 0;
 }
 
 .pres-txt{
-    padding: 0.7rem;
-    width: 1000px;
-    margin-left: 23%;
+    padding: 0.7rem 0;
+    width: 50vw;
     background-color: rgb(37, 35, 33);
     border-radius: 0.4rem;
     border: 3px solid black;
@@ -248,10 +257,8 @@ body{
 /* =============EQUIPE============= */
 
 .team-titre{
-    width: 250px;
-    margin-left: 43.3%;
-    border-radius: 0.4rem;
-    padding: 0.7rem;
+    width: 100%;
+    padding: 0.7rem 0;
     text-align: center;
     font-size: 32px;
 }
@@ -260,11 +267,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0.7rem;
-    height: 200px;
-    width: 1100px;
-    margin-left: 390px;
+    justify-content: center;
+    text-align: center;
+    padding: 0.7rem 0;
+    align-items: center;
 }
 
 .team-items{
@@ -277,7 +283,6 @@ body{
     border: 3px solid #262285;
     padding: 1rem;
     transition: all 0.2s ease-in-out;
-    margin-left: 12px;
     font-size: 20px;
 }
 
@@ -291,10 +296,9 @@ body{
 /* =============CONTACT============= */
 
 .contact-titre{
-    width: 250px;
-    margin-left: 43.3%;
+    width: 100%;
     border-radius: 0.4rem;
-    padding: 0.7rem;
+    padding: 0.7rem 0;
     text-align: center;
     font-size: 32px;
 }
@@ -303,11 +307,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:center;
     padding: 0.7rem;
-    height: 200px;
-    width: 1100px;
-    margin-left: 390px;
+    align-items: center;
 }
 
 .contact-items{
