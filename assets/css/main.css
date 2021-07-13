@@ -10,9 +10,13 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.904);   
+    background-color: rgba(0, 0, 0, 0.904); 
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll; 
+}
 /* =============HEADER============= */
 
 .header{
@@ -297,7 +301,6 @@ body{
 
 .contact-titre{
     width: 100%;
-    border-radius: 0.4rem;
     padding: 0.7rem 0;
     text-align: center;
     font-size: 32px;
@@ -310,6 +313,7 @@ body{
     justify-content:center;
     padding: 0.7rem;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .contact-items{
@@ -334,6 +338,59 @@ body{
     font-size: 1rem;
     padding: 0.2rem;
 }
+/* =============FORMULAIRE============= */
+
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.7rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-titre{
+    width: 100%;
+    padding: 0.7rem 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.form-items{
+    text-align: center; 
+    width: 450px;
+    background-color: rgb(37, 35, 33);
+    border-radius: 1.5rem;
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+input, textarea{
+    width: 75%;
+    outline: 0;
+    padding: 0.7rem;
+    background-color: #1b1b1b;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    animation: 1.5s ease;
+    border-radius: 0.4rem;
+    border: 1px solid black;
+}
+textarea {
+    resize: none;
+}
+
+#form-text{
+    height: 15vh;
+}
+
+.submit{
+      cursor: pointer;
+  }
 /* =============FOOTER============= */
 
 footer{

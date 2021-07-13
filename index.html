@@ -21,7 +21,7 @@
                 <h1>BEDRINE<span>DEV</span></h1>
             </div>            
                  <ul class="navigation">
-                    <li><a href="#home" class="nav-anim">A propos</a></li>
+                    <li><a href="#pres" class="nav-anim">A propos</a></li>
                     <li><a href="#services" class="nav-anim">Service</a></li>               
                     <li><a href="#contact" class="nav-anim">Contact</a></li>
                  </ul>
@@ -35,8 +35,8 @@
                 <p class="text-1" id="txt1">Développeur WEB et Informaticien</p>
                 <p class="text-2" id="txt2">Développeur web et informaticien, je réponds à toutes vos demandes sur Lyon et sa région</p>
                 <div class="btn"> 
-                    <p class="btn-1">Une idée de projet?</p>
-                    <p class="btn-2">Besoin d'aide?</p>  
+                    <a href="#services" class="btn-1">Une idée de projet?</a>
+                    <a href="#contact" class="btn-2">Besoin d'aide?</a>  
                 </div>                   
             </div>
             <div>
@@ -47,7 +47,7 @@
         </section>
 
         <!-- Services -->
-        <section class="services">           
+        <section class="services" id="services">           
             <h2 class="services-titre"><strong>Services</strong></h2>               
             <div class="services-container">
                 <div class="services-items">
@@ -108,7 +108,7 @@
         </section>
         <!-- Présentation -->
         <section>
-            <div class="presentation">
+            <div class="presentation" id="pres">
                 <h2 class="pres-titre">Présentation</h2>
                 <p class="pres-txt">
                     -Bedrinedev est une <strong>Agence Digitale</strong> située à <strong>Irigny</strong>, créée par <strong>Alan BEDRINE</strong> en août 2020, qui a pour ambition de rendre accessible à tous la <strong>création d'un site internet.</strong><br><br>
@@ -147,7 +147,7 @@
         </section>
         <!-- Contact -->
         <section>
-            <div class="contact">
+            <div class="contact" id="contact">
                 <h2 class="contact-titre">Nous contacter</h2>
                 <div class="contact-container">
                     <div class="contact-items">
@@ -179,6 +179,22 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <div class="form-container">
+                <h3 class="form-titre">Formulaire de contact</h3>
+                <div class="form-items">
+                    <form action="https://formsubmit.co/axelxbox126@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Vous avez reçu un mail provenant de Bedrinedev">
+                        <input type="email" name="email" required placeholder="Adresse mail*">
+                        <input type="text" name="prenom" required placeholder="Prénom*">
+                        <input type="text" name="nom" required placeholder="Nom*">
+                        <textarea name="message" id="form-text" cols="30" rows="10" required placeholder="Message*"></textarea>
+                        <input class="submit" type="submit" name="envoi" value="Envoyer">
+                    </form>
+                </div>
+            </div> 
         </section>
         
     <!-- FOOTER -->    
