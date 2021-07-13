@@ -10,9 +10,13 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.904);   
+    background-color: rgba(0, 0, 0, 0.904); 
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll; 
+}
 /* =============HEADER============= */
 
 .header{
