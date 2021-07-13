@@ -372,11 +372,13 @@ input, textarea{
     width: 75%;
     outline: 0;
     padding: 0.7rem;
-    background-color: #272727;
+    background-color: #1b1b1b;
     border: none;
     font-size: 1rem;
     margin-bottom: 0.7rem;
     animation: 1.5s ease;
+    border-radius: 0.4rem;
+    border: 1px solid black;
 }
 textarea {
     resize: none;
