@@ -223,7 +223,7 @@ html{
     width: 240px;
     height: 110px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 3px solid #262285;
+    border: 3px solid rgb(126, 126, 126);
     padding: 1rem;
     transition: all 0.2s ease-in-out;
     margin-bottom: 1rem;
@@ -289,7 +289,7 @@ html{
     width: 240px;
     height: 160px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 3px solid #262285;
+    border: 3px solid rgb(126, 126, 126);
     padding: 1rem;
     transition: all 0.2s ease-in-out;
     font-size: 20px;
